@@ -63,8 +63,8 @@ Bash
 npm install
 
 
-4. Start Development Server
-5. 
+3. Start Development Server
+   
 Bash
 npm run dev
 Open http://localhost:5173 in your browser to launch the utility locally.
