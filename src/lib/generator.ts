@@ -14,7 +14,7 @@ export function secureInt(max: number): number {
   const buf = new Uint32Array(1);
   const limit = Math.floor(0x100000000 / max) * max;
   let v: number;
-  do { crypto.getRandomValues(buf); v = buf[0]; } while (v >= limit);
+  do { crypto.getRandomValues(buf); v = buf[0]!; } while (v >= limit);
   return v % max;
 }
 
